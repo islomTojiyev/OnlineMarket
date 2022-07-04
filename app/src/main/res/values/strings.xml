@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">OnlineMarket</string>
+    <string name="log_in"><b>Войти</b></string>
+    <string name="men_clothes"><b>Мужская одежда</b></string>
+    <string name="women_clothes"><b>Женская одежда</b></string>
+    <string name="children_clothes"><b>Детская одежда</b></string>
+    <string name="men_shirt">Рубашки</string>
+    <string name="men_pant">Брюки</string>
+    <string name="men_suit">Костюмы</string>
+    <string name="men_jeans">Джинсы</string>
+    <string name="men_shoes">Туфли</string>
+    <string name="men_t_shirts">Футболки</string>
+    <string name="men_sneakers">Кросовки</string>
+    <string name="men_sportswear">Спортивки</string>
+</resources>

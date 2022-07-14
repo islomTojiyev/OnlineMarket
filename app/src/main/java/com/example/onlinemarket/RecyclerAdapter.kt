@@ -34,6 +34,8 @@ class RecyclerAdapter() :
         R.drawable.men_sportswear
     )
 
+
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val layoutView =
             LayoutInflater.from(parent.context).inflate(R.layout.category_item, parent, false)

@@ -11,10 +11,8 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.LinearSnapHelper
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
-import java.util.*
 import kotlin.concurrent.thread
 
 
@@ -22,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
 
     private var adapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>? = null
-    private var discountStoreAdapter: RecyclerView.Adapter<DiscountStoreAdapter.ViewHolder>? = null
+    private var discountStoresAdapter: RecyclerView.Adapter<DiscountStoresAdapter.ViewHolder>? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,7 +31,6 @@ class MainActivity : AppCompatActivity() {
         adapter = RecyclerAdapter()
         men_closes_category.adapter = adapter
 
-
         women_closes_category.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         women_closes_category.adapter = adapter
@@ -43,12 +40,8 @@ class MainActivity : AppCompatActivity() {
         children_closes_category.adapter = adapter
 
         discount_stores.layoutManager =
-            LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false)
-        discountStoreAdapter = DiscountStoreAdapter()
-        discount_stores.adapter = discountStoreAdapter
-
-
+            LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        discount_stores.adapter = discountStoresAdapter
     }
-
 
 }

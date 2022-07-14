@@ -127,7 +127,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="@layout/discount_stores" />
+        tools:listitem="@layout/discount_stores_item" />
+
 
 
 </LinearLayout>

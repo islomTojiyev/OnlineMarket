@@ -6,20 +6,23 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 
-class DiscountStoreAdapter() : RecyclerView.Adapter<DiscountStoreAdapter.ViewHolder>() {
+class DiscountStoresAdapter() :
+    RecyclerView.Adapter<DiscountStoresAdapter.ViewHolder>() {
 
     private var images = arrayOf(
         R.drawable.discount_stores_just,
         R.drawable.discount_stores_avva,
-        R.drawable.discount_stores_waikiki,
         R.drawable.discount_stores_indenim,
+        R.drawable.discount_stores_waikiki,
         R.drawable.discount_stores_zara
     )
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType:Int): ViewHolder {
-        var layoutView = LayoutInflater.from(parent.context).inflate(R.layout.discount_stores, parent, false)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        var layoutView =
+            LayoutInflater.from(parent.context).inflate(R.layout.discount_stores_item,parent,false)
         return ViewHolder(layoutView)
     }
+
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.image.setImageResource(images[position])
@@ -29,10 +32,12 @@ class DiscountStoreAdapter() : RecyclerView.Adapter<DiscountStoreAdapter.ViewHol
         return images.size
     }
 
-    class ViewHolder(view: View) : RecyclerView.ViewHolder(view){
+    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         var image : ImageView
         init {
-            image = view.findViewById(R.id.discount_store_image)
+            image = view.findViewById(R.id.discount_stores_image)
         }
     }
+
+
 }
